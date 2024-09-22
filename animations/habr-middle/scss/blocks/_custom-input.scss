@@ -1,0 +1,117 @@
+.custom-input {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  $root: &;
+
+  &--card {
+    #{$root}__field {
+      padding-right: 126px;
+    }
+
+    #{$root}__icon-group {
+      bottom: 12px;
+      display: flex;
+      gap: 12px;
+      pointer-events: none;
+      position: absolute;
+      right: 22px;
+    }
+
+    #{$root}__icon {
+      left: 0;
+      position: relative;
+      top: 0;
+    }
+  }
+
+  &--error {
+    #{$root}__field {
+      background-color: $color-white-5;
+      border: 1px solid $color-salmon;
+    }
+
+    #{$root}__icon {
+      color: $color-salmon;
+    }
+
+    #{$root}__label {
+      color: $color-salmon;
+    }
+
+    #{$root}__error {
+      display: block;
+    }
+  }
+
+  &__field {
+    background-color: $color-white-15;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: $color-white;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    height: 70px;
+    line-height: 24px;
+    outline: none;
+    padding: 34px 36px 12px 20px;
+    transition: background-color $transition-300;
+    width: 100%;
+
+    &[disabled] {
+      background-color: $color-white-5;
+      pointer-events: none;
+
+      + #{$root}__label {
+        color: $color-white-15;
+        pointer-events: none;
+      }
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-bay-leaf-15;
+
+      ~ #{$root}__icon {
+        color: $color-light-green;
+      }
+    }
+
+    &::placeholder {
+      color: $color-white-40;
+    }
+  }
+
+  &__label {
+    color: $color-white-70;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    left: 20px;
+    line-height: 16px;
+    position: absolute;
+    top: 10px;
+  }
+
+  &__icon {
+    bottom: 12px;
+    color: $color-white-40;
+    pointer-events: none;
+    position: absolute;
+    right: 22px;
+    transition: color $transition-300;
+  }
+
+  &__error {
+    bottom: -27px;
+    color: $color-salmon;
+    display: none;
+    font-size: 12px;
+    left: 20px;
+    line-height: 16px;
+    position: absolute;
+  }
+}

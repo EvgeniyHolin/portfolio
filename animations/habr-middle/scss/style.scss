@@ -1,0 +1,34 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize.scss";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_feedback";
+@import "blocks/_feedback-footer";
+@import "blocks/_form-message";
+@import "blocks/_subscribe-form";
+@import "blocks/_bubble";
+@import "blocks/custom-feedback-input";
+@import "blocks/custom-feedback-textarea";
+
+@import "blocks/_header";
+@import "blocks/_main-nav";
+@import "blocks/_animation";
+@import "blocks/_btn";
+@import "blocks/_footer";
+@import "blocks/_order";
+@import "blocks/_product-card";
+@import "blocks/_form-order";
+@import "blocks/_socials";
+@import "blocks/_custom-input";
+@import "blocks/_custom-textarea";
+@import "blocks/_custom-checkbox";
+@import "blocks/_custom-radio";

@@ -1,0 +1,86 @@
+.connection {
+  background-color: $color-green-white;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 49px 0;
+
+    @include vp-1023 {
+      padding: 50px 19px;
+    }
+
+    @include vp-767 {
+      padding: 40px 27px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    @include vp-590 {
+      margin: 0 0 5px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__descr {
+    margin: 0 0 40px;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include vp-1023 {
+      margin: 0 0 30px;
+    }
+
+    @include vp-590 {
+      margin: 0 0 20px;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+
+  &__confidentiality {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-locust;
+
+    @include vp-767 {
+      text-align: center;
+    }
+
+    @include vp-590 {
+      text-align: center;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+
+  }
+  
+  &__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-locust;
+    text-decoration: underline;
+
+    @include vp-590 {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    &:focus-visible,
+    &:hover {
+      outline: none;
+      color: $color-bokara-grey;
+    }
+  }
+}

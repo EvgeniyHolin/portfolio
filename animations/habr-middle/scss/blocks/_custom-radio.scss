@@ -1,0 +1,38 @@
+.custom-radio {
+  $root: &;
+
+  &__label {
+    background-color: $color-white-15;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: $color-white;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 8px 22px;
+    text-align: center;
+    user-select: none;
+    width: 100%;
+    transition: border-color $transition-300, color $transition-300;
+  }
+
+  &__field {
+    &:checked {
+      + #{$root}__label {
+        color: $color-light-green;
+      }
+    }
+
+    &:hover,
+    &:focus-visible {
+      + #{$root}__label {
+        border: 1px solid $color-light-green;
+        color: $color-light-green;
+      }
+    }
+  }
+}
+
+

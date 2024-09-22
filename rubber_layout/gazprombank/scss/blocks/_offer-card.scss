@@ -1,0 +1,90 @@
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  height: 100%;
+  min-height: 200px;
+  background-color: $color-solitude-1;
+  border-radius: 12px;
+
+  @include vp-768 {
+    padding: 24px;
+    min-height: 280px;
+  }
+
+  @include vp-1024 {
+    padding: 0;
+    align-items: center;
+    gap: 16px;
+    background-color: transparent;
+  }
+
+  @include vp-1304 {
+    min-height: unset;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 1px;
+    width: 32px;
+    height: 32px;
+
+    @include vp-1024 {
+      margin: 0 0 5px;
+      width: 64px;
+      height: 64px;
+      color: $color-white;
+      background-color: $color-royal-blue-1;
+      border-radius: 12px;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include vp-1024 {
+      max-width: 295px;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    @include vp-1304 {
+      max-width: unset;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+
+    @include vp-1024 {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: $color-royal-blue-1;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      color: $color-free-speech-blue;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  background: linear-gradient(90deg, #415BD2 0%, #8DA1F7 100%);
+
+  &__content {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 22px 0;
+
+    @include vp-1023 {
+      padding: 15px 0;
+    }
+  }
+
+  &__logo-link:focus-visible {
+    outline-offset: 8px;
+    outline-color: $color-solitude-1;
+  }
+
+  &__logo-picture {
+    display: block;
+    height: 36px;
+    width: 170px;
+
+    @include vp-1023 {
+      height: 36px;
+      width: 36px;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding: 0;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      color: $color-royal-blue;
+    }
+  }
+}

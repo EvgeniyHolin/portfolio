@@ -1,0 +1,42 @@
+.plus {
+  position: absolute;
+  display: flex;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+
+  @include vp-1023 {
+    width: 48px;
+    height: 48px;
+  }
+
+  @include vp-767 {
+    width: 36px;
+    height: 36px;
+  }
+  
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible .plus__icon,
+  &:hover .plus__icon {
+    color: $color-green-white;
+  }
+
+  &__icon {
+    width: 64px;
+    height: 64px;
+    color: $color-hint-of-red;
+
+    @include vp-1023 {
+      width: 48px;
+      height: 48px;
+    }
+  
+    @include vp-767 {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

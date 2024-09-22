@@ -1,0 +1,22 @@
+.order {
+  padding: 80px 0 80px;
+}
+
+.order__title {
+  margin: 0 0 24px;
+  grid-column: span 2;
+  font-family: 'Press Start 2P', 'Arial', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #87F29A;
+}
+
+.order__subtext {
+  display: block;
+  margin: 0 0 80px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 145%;
+}

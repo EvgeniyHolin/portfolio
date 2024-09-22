@@ -1,0 +1,69 @@
+.custom-input {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 5px;
+  position: relative;
+
+  &--error .error-message {
+    display: block;
+  }
+
+  &__input {
+    padding: 16px;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-nero;
+    border: 1px solid $color-hawkes-blue;
+    border-radius: 8px;
+
+    @include vp-1023 {
+      padding: 15px;
+    }
+
+    @include vp-767 {
+      padding: 14px;
+      font-size: 14px;
+      line-height: 129%;
+    }
+
+    &:disabled {
+      background-color: $color-ghost-white;
+      border-color: $color-hawkes-blue;
+    }
+
+    &:disabled + .custom-input__label,
+    &:disabled::placeholder {
+      color: rgba(140, 140, 141, 0.5);
+    }
+
+    &:hover:not(:disabled),
+    &:focus-visible:not(:disabled) {
+      outline: none;
+      border-color: $color-deep-lilac;
+    }
+
+    &::placeholder {
+      color: $color-grey-suit;
+      opacity: 1;
+    }
+  }
+
+  &--error &__input,
+  &--error &__input:hover,
+  &--error &__input:focus-visible {
+    border-color: $color-error;
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 129%;
+    color: $color-grey-suit;
+    user-select: none;
+
+    @include vp-767 {
+      font-size: 12px;
+    }
+  }
+}

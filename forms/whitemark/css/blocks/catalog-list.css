@@ -1,0 +1,14 @@
+.catalog-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0 16px;
+	width: 100%;
+	margin: 20px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.catalog-list__item:not(:nth-child(-n + 3)) {
+  margin-top: -18px;
+  height: 500px;
+}

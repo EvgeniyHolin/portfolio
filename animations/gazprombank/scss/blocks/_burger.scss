@@ -1,0 +1,45 @@
+.burger {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  z-index: 15;
+  cursor: pointer;
+  $root: &;
+
+  .header--open & {
+    &::before,
+    &::after {
+      transform: rotate(45deg);
+      top: 50%;
+      background-color: $color-white;
+      transition: background-color $transition-300, top $transition-300, transform $transition-300 0.3s;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 0;
+    width: 32px;
+    height: 4px;
+    background-color: $color-black;
+    transition: background-color $transition-300, top $transition-300 0.3s, transform $transition-300;
+  }
+
+  &::after {
+    top: 19px;
+  }
+}

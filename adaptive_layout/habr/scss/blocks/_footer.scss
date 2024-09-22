@@ -1,0 +1,94 @@
+.footer {
+  background-color: $color-black;
+  padding: 40px 0;
+  
+  @include vp-767 {
+    padding: 30px 0;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+
+    @include vp-1023 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__logo-link {
+    width: max-content;
+    display: flex;
+
+    &:focus-visible {
+      outline-offset: 8px;
+      outline: 2px solid $color-deep-lilac;
+    }
+
+    svg {
+      width: 140px;
+      height: 40px;
+
+      @include vp-767 {
+        width: 112px;
+        height: 32px;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    @include vp-1023 {
+      gap: 2px;
+      margin: 0 0 0 -30px
+    }
+
+    @include vp-767 {
+      margin: 0;
+      gap: 5px;
+    }
+  }
+
+  &__info-tel {
+    color: $color-white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 117%;
+      letter-spacing: -0.01em;
+    }
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      color: $color-deep-lilac;
+    }
+  }
+
+  &__info-description {
+    color: $color-white-50;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 133%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.custom-radio {
+  flex-grow: 1;
+}
+
+.catalog-form__wrapper-radio--transfer .custom-radio:last-child {
+  grid-column: span 2;
+  margin-top: -1px;
+}
+
+.custom-radio__label {
+  display: block;
+  margin-left: -1px;
+  padding: 4px;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.04em;
+  color: #AD8361;
+  text-align: center;
+  border: 1px solid #AD8361;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-radio__label:hover {
+  color: inherit;
+}
+
+.custom-radio__input:focus-visible + .custom-radio__label {
+  background-color: #EFEDE7;
+}
+
+.custom-radio__input:disabled + .custom-radio__label {
+  color: rgba(173, 131, 97, 0.5);
+  background-color: rgba(243, 243, 243, 0.5);
+  outline-color: rgba(173, 131, 97, 0.5);
+  pointer-events: none;
+}
+
+.custom-radio__input:checked + .custom-radio__label {
+  color: #ffffff;
+  background-color: #AD8361;
+}

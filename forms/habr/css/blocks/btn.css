@@ -1,0 +1,33 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 145%;
+  background-color: #87F29A;
+  border: none;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: #78DF8A;
+  outline: none;
+}
+
+.btn:disabled {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.btn:disabled .order-cart__sumbit-text,
+.btn:disabled .order-cart__sumbit-icon {
+  color: rgba(0, 0, 0, 0.4);
+}

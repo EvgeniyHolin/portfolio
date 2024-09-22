@@ -1,0 +1,38 @@
+.apply-filter {
+  display: none;
+  position: absolute;
+  padding: 12px;
+  width: 156px;
+  top: 50%;
+  right: -55%;
+  transform: translateY(calc(-50% - 18px));
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+  z-index: 10;
+  box-shadow: 0px 2px 20px 0px #0000001A;
+}
+
+.apply-filter::after {
+  content: '';
+  position: absolute;
+  top: 19%;
+  left: -15px;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 25px solid #ffffff;
+  transform: rotate(-90deg);
+  z-index: -1;
+}
+
+.apply-filter--active {
+  display: block;
+}
+
+.apply-filter:hover::after {
+  border-bottom-color: #AD8361;
+}
+
+.apply-filter:focus-visible::after {
+  border-bottom-color: #AD8361;
+}

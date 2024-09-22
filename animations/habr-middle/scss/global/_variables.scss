@@ -1,0 +1,43 @@
+// Colorsbtn
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-black-pearl: #121C25;
+$color-bay-leaf: #6FB582;
+$color-light-green: #87F29A;
+$color-pastel-green: #78DF8A;
+$color-salmon: #FF7575;
+//$color-perano: #AFA3FF;
+//$color-light-slate-blue: #998CF1;
+//$color-turbo: #FFC61F;
+//$color-moon-yellow: #F2B913;
+
+$color-catalina-blue: #243961;
+$color-palatinate-purple: #61235F;
+$color-spectra: #315C51;
+$color-pompadour: #6A2844;
+$color-scarlet-gum: #432858;
+$color--rish-coffee: #62432C;
+$color-woodland: #676A47;
+
+
+$color-white-5: rgba(255, 255, 255, 0.05);
+$color-white-10: rgba(255, 255, 255, 0.1);
+$color-white-15: rgba(255, 255, 255, 0.15);
+$color-white-40: rgba(255, 255, 255, 0.4);
+$color-white-50: rgba(255, 255, 255, 0.5);
+$color-white-70: rgba(255, 255, 255, 0.7);
+$color-white-80: rgba(255, 255, 255, 0.8);
+$color-bay-leaf-15: rgba($color-bay-leaf, 0.15);
+//$color-salmon-15: rgba($color-salmon, 0.15);
+
+// Typography
+$ff-play: "Play", "Arial", sans-serif;
+$ff-press: "Press Start 2P", "Arial", sans-serif;
+
+// Viewport
+$vp-tablet: 1023px;
+$vp-mobile: 767px;
+
+// Animation
+$transition-300: ease-in 0.3s;

@@ -1,0 +1,43 @@
+.btn {
+  outline: none;
+  display: block;
+  border-radius: 8px;
+  padding: 10px;
+  color: $color-white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: $color-royal-blue;
+  user-select: none;
+
+  @include vp-1023 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &:hover,
+  &:focus-visible:not(.btn--disabled):not(.btn--invert) {
+    outline: none;
+    background-color: $color-free-speech-blue;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    color: $color-manatee-2;
+    background-color: $color-white-smoke;
+    cursor: none;
+  }
+
+  &--invert {
+    color: $color-royal-blue;
+    background-color: $color-white;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      background-color: $color-solitude-3;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.custom-checkbox {
+  display: flex;
+  flex-direction: column;
+  $root: &;
+
+  &--error {
+    #{$root}__label::before {
+      border: 1px solid $color-salmon;
+    }
+
+    #{$root}__icon {
+      color: $color-salmon;
+    }
+
+    #{$root}__text {
+      color: $color-salmon;
+    }
+  }
+
+  .custom-checkbox__field {
+    &:checked {
+      + #{$root}__label #{$root}__icon {
+        opacity: 1;
+      }
+    }
+
+    &:hover,
+    &:focus-visible {
+      + #{$root}__label #{$root}__text {
+        color: $color-light-green;
+      }
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding-left: 34px;
+    position: relative;
+
+    &::before {
+      background-color: $color-white;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      content: "";
+      height: 20px;
+      left: 0;
+      position: absolute;
+      top: 2px;
+      width: 20px;
+    }
+  }
+
+  &__icon {
+    color: $color-black;
+    content: "";
+    opacity: 0;
+    height: 9px;
+    left: 4px;
+    position: absolute;
+    top: 8px;
+    width: 13px;
+    transition: opacity $transition-300;
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 18px;
+    line-height: 24px;
+    user-select: none;
+    transition: color $transition-300;
+  }
+
+  &__about {
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+}
+
+
+
+
+

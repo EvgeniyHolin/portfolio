@@ -1,0 +1,25 @@
+.custom-feedback-textarea {
+  display: flex;
+  position: relative;
+  width: 100%;
+
+  &__field {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 400;
+    height: 64px;
+    line-height: 32px;
+    padding: 16px 64px 16px 24px;
+    width: 100%;
+    resize: none;
+    outline: none;
+
+    &::placeholder {
+      color: #FFFFFF;
+    }
+  }
+}

@@ -1,0 +1,340 @@
+.not-found {
+  overflow: hidden;
+
+  &__wrapper {
+    min-height: 100vh;
+    padding: 30px 0;
+    position: relative;
+  }
+
+  &__star {
+    background-color: $color-white;
+    height: 8px;
+    left: 5%;
+    opacity: 0.5;
+    position: absolute;
+    top: -10px;
+    width: 8px;
+    animation: starMove 1.5s linear infinite;
+
+    &:nth-child(1) {
+      animation-delay: 3.5s;
+    }
+
+    &:nth-child(2) {
+      left: 15%;
+      animation-delay: 1s;
+    }
+
+    &:nth-child(3) {
+      left: 25%;
+      animation-delay: 3s;
+    }
+
+    &:nth-child(4) {
+      left: 35%;
+      animation-delay: 1.7s;
+    }
+
+    &:nth-child(5) {
+      left: 45%;
+      animation-delay: 0.6s;
+    }
+
+    &:nth-child(6) {
+      left: 55%;
+    }
+
+    &:nth-child(7) {
+      left: 65%;
+      animation-delay: 2.8s;
+    }
+
+    &:nth-child(8) {
+      left: 75%;
+      animation-delay: 1.9s;
+    }
+
+    &:nth-child(9) {
+      left: 85%;
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(10) {
+      left: 95%;
+      animation-delay: 3.6s;
+    }
+  }
+
+  &__boss {
+    left: calc(50% - 220px);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    transform: scale(2) translateY(-80%);
+    filter: brightness(1);
+    animation: moveBoss 5s ease-in-out 6s forwards, 
+               damageBoss 0.1s ease 15.5s 3, 
+               damageBoss 0.1s ease 16.5s 3, 
+               killBoss 2s ease 17.5s forwards;
+  }
+
+  &__link {
+    display: flex;
+    overflow: hidden;
+    transform: translateY(-200%);
+    animation: slideInDown $transition-300 5s forwards;
+  }
+
+  &__icon {
+    height: 32px;
+    width: 180px;
+  }
+
+  &__note-inner {
+    bottom: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    transform: translateY(150%);
+    animation: slideInUp $transition-300 5s forwards;
+  }
+
+  &__note {
+    display: flex;
+  }
+
+  &__note-accent {
+    color: $color-light-green;
+  }
+
+  &__bullet {
+    background-color: $color-light-green;
+    bottom: 200px;
+    display: flex;
+    height: 20px;
+    left: calc(50% - 10px);
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    animation: moveBullet 1.5s 15s;
+
+    &--second-shot {
+      animation-delay: 16s;
+      transform: scale(1, 1.7);
+    }
+
+    &--third-shot {
+      animation-delay: 17s;
+      transform: scale(1, 2.3);
+    }
+  }
+
+  &__rocket {
+    bottom: 0;
+    left: calc(50% - 105px);
+    position: absolute;
+    transform: translateX(-390%) translateY(90%) rotate(45deg);
+    animation: moveRocket 5s ease-in-out 9s forwards;
+
+    &-fire {
+      opacity: 1;
+      animation: fireFadeOut 1s ease 9s 5 backwards;
+    }
+  }
+
+  &__return {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    &::before {
+      background-color: $color-light-green;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+      animation: slideInRight 2s linear 18s forwards;
+    }
+  }
+
+  &__btn {
+    background-color: $color-black-pearl;
+    border-radius: 8px;
+    color: $color-white;
+    display: flex;
+    font-family: $ff-play;
+    font-size: 22px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 32px;
+    padding: 16px;
+    width: 340px;
+    position: relative;
+    z-index: 100000000;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    animation: addbtn $transition-300 20s forwards;
+  }
+}
+
+@keyframes starMove {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveBoss {
+  0% {
+    transform: scale(1.5) translateY(-80%);
+  }
+  30% {
+    transform: scale(1.5) translateY(30%);
+  }
+  40% {
+    transform: scale(1.5) translateY(30%) rotate(20deg);
+  }
+  60% {
+    transform: scale(1.5) translateY(30%) rotate(-20deg);
+  }
+  70% {
+    transform: scale(1) translateY(30%) rotate(0);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes fireFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes moveRocket {
+  0% {
+    transform: translateX(-390%) translateY(90%) rotate(45deg);
+  }
+  75% {
+    transform: translateX(0) translateY(-100%) rotate(0);
+  }
+  80% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveBullet {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 110%;
+  }
+}
+
+@keyframes damageBoss {
+  0% {
+    filter: brightness(1)
+  }
+  50% {
+    filter: brightness(10)
+  }
+  100% {
+    filter: brightness(1)
+  }
+}
+
+@keyframes killBoss {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(2) rotate(45deg);
+    filter: brightness(1);
+  }
+  40% {
+    transform: scale(0.8) rotate(-90deg);
+    filter: brightness(10);
+  }
+  60% {
+    transform: scale(1.5) rotate(45deg);
+    filter: brightness(1);
+  }
+  80% {
+    transform: scale(0.4) rotate(-90deg);
+    filter: brightness(10);
+  }
+  90% {
+    transform: scale(1.2) rotate(45deg);
+    filter: brightness(1);
+  }
+  100% {
+    transform: scale(0.1) rotate(-90deg);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  100% {
+    clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+  }
+}
+
+@keyframes addbtn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+}

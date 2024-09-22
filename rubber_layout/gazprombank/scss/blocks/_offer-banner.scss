@@ -1,0 +1,88 @@
+.offer-banner {
+  margin: 0 0 60px;
+
+  @include vp-1024 {
+    margin: 0 0 99px;
+  }
+
+  @include vp-1304 {
+    margin: 0 0 120px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 125px;
+    gap: 24px;
+    padding: 8px 0 8px 20px;
+    background-color: $color-alice-blue;
+    border-radius: 16px;
+
+    @include vp-768 {
+      position: relative;
+      padding: 25px 24px;
+    }
+
+    @include vp-1024 {
+      padding: 48px 100px;
+    }
+
+    @include vp-1304 {
+      padding: 48px 120px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    padding: 2px 0 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    @include vp-1024 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include vp-1024 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__img {
+    width: 125px;
+    height: 84px;
+
+    @include vp-768 {
+      position: absolute;
+      width: 174px;
+      height: 116px;
+      right: 40px;
+      bottom: 1px;
+    }
+
+    @include vp-1024 {
+      width: 260px;
+      height: 175px;
+    }
+
+    @include vp-1304 {
+      right: 184px;
+      bottom: 0;
+    }
+  }
+}

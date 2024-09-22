@@ -1,0 +1,94 @@
+.banner {
+  margin: 0 0 121px;
+
+  @include vp-1023 {
+    margin: 0 0 59px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 50px;
+  }
+
+  &__picture {
+    position: absolute;
+    margin: 0 0 0 -80px;
+    padding: 0 0 0 80px;
+    width: calc(100% + 80px);
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: $color-swiss-coffee;
+
+    @include vp-1023 {
+      margin: 0 0 0 -40px;
+      padding: 0 0 0 40px;
+      width: calc(100% + 40px);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 80px;
+    overflow: hidden;
+
+    @include vp-1023 {
+      padding: 28px 40px;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+      padding: 20px 57px;
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 40px;
+    line-height: 44px;
+
+    @include vp-1023 {
+      margin: 0 0 5px;
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 24px;
+    line-height: 28px;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__link {
+    @include vp-767 {
+      width: 260px;
+    }
+  }
+}

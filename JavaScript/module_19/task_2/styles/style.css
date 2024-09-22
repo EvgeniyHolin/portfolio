@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0 0 30px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 20px;
+  background-color: #b3adad;
+  border-radius: 10px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__label {
+  font-size: 14px;
+  line-height: 18px;
+  color: #c0bcbc;
+}
+
+.card__value {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.card__btn {
+  position: absolute;
+  padding: 5px;
+  width: 100px;
+  top: 20px;
+  right: 20px;
+  color: rgb(82, 82, 234);
+  border: 1px solid rgb(82, 82, 234);
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.wrapper-form {
+  position: absolute;
+  padding: 20px;
+  width: 450px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c48a8a;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  background-color: transparent;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  border-radius: 20px;
+  transform: rotate(45deg);
+}
+
+.close-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  border-radius: 20px;
+  transform: rotate(135deg);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__input,
+.form__select {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  border-radius: 10px;
+}
+
+.save-btn {
+  padding: 10px;
+  color: #fff;
+  background-color: rgb(82, 82, 234);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delivered {
+  outline: 3px solid green;
+}
+
+.canceled {
+  opacity: 0.6;
+  pointer-events: none;
+  user-select: none;
+}

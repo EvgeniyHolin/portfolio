@@ -1,0 +1,76 @@
+.custom-textarea {
+  position: relative;
+  width: 100%;
+  $root: &;
+
+  &--error {
+    #{$root}__error {
+      display: block;
+    }
+
+    #{$root}__field {
+      border: 1px solid $color-salmon;
+    }
+
+    #{$root}__label {
+      color: $color-salmon;
+    }
+  }
+
+  &__field {
+    background-color: $color-white-15;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: $color-white;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    min-height: 118px;
+    padding: 34px 36px 12px 20px;
+    resize: none;
+    width: 100%;
+    outline: none;
+    transition: background-color $transition-300;
+
+    &[disabled] {
+      background-color: $color-white-5;
+      pointer-events: none;
+
+      + #{$root}__label {
+        color: $color-white-15;
+        pointer-events: none;
+      }
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-bay-leaf-15;
+    }
+
+    &::placeholder {
+      color: $color-white-40;
+    }
+  }
+
+  &__label {
+    color: $color-white-70;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    left: 20px;
+    line-height: 16px;
+    position: absolute;
+    top: 10px;
+  }
+
+  &__error {
+    bottom: -27px;
+    color: $color-salmon;
+    display: none;
+    font-size: 12px;
+    left: 20px;
+    line-height: 16px;
+    position: absolute;
+  }
+}

@@ -1,0 +1,57 @@
+.burger {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  $root: &;
+
+  .header:not(.header--open) &:hover &__line {
+    width: 80%;
+  }
+
+  &__line {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: width $transition-300;
+
+    .header--open & {
+      width: 100%;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -150%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-black;
+      transform: rotate(0deg);
+      transition: top $transition-300 0.3s, transform $transition-300;
+
+      .header--open & {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top $transition-300, transform $transition-300 0.3s;
+      }
+    }
+
+    &::after {
+      top: 150%;
+
+      .header--open & {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

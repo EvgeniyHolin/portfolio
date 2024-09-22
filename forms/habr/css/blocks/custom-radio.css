@@ -1,0 +1,28 @@
+.custom-radio {
+  grid-column: span 2;
+  display: flex;
+  gap: 12px;
+}
+
+.custom-radio__label {
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 143%;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-radio__label:hover,
+.custom-radio__input:focus-visible + .custom-radio__label {
+  color: #87F29A;
+  background-color: rgba(111, 181, 130, 0.15);
+  outline: none;
+}
+
+.custom-radio__input:checked + .custom-radio__label {
+  color: #87F29A;
+}

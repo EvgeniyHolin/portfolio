@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+.socials__link:hover,
+.socials__link:focus-visible {
+  border-color: #87F29A;
+  outline: none;
+}

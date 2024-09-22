@@ -1,0 +1,32 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize.scss";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+
+/* Blocks */
+/* ------------------------------------ */
+
+@import "blocks/_btn";
+@import "blocks/_header";
+@import "blocks/_hero";
+@import "blocks/_categories";
+@import "blocks/_banner";
+@import "blocks/_catalog";
+@import "blocks/_product";
+@import "blocks/_product-list";
+@import "blocks/_product-card";
+@import "blocks/_connection";
+@import "blocks/_feedback-form";
+@import "blocks/_custom-input";
+@import "blocks/_footer";
+@import "blocks/_main-nav";
+@import "blocks/_social";
+@import "blocks/_plus";
+@import "blocks/_error";
+@import "blocks/_counter";

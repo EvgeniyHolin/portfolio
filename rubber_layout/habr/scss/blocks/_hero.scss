@@ -1,0 +1,117 @@
+.hero {
+  position: relative;
+  margin: 0 0 121px;
+  padding: 71px 0 0;
+
+  @include vp-1023 {
+    margin: 0 0 59px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 50px;
+    padding: 60px 0 0;
+  }
+
+  &__image {
+    height: calc(100vh - 72px);
+    background-color: $color-swiss-coffee;
+
+    @include vp-767 {
+      height: calc(100vh - 60px);
+    }
+  }
+
+  &__link {
+    &--mirror {
+      top: 21%;
+      right: 39.5%;
+
+      @include vp-1649 {
+        top: 15%;
+        right: 31%;
+      }
+
+      @include vp-1023 {
+        top: 25%;
+        right: 35.5%;
+      }
+
+      @include vp-767 {
+        top: 20%;
+        right: 31%;
+      }
+
+      @media (max-width: 500px) {
+        top: 40.5%;
+        right: 32%;
+      }
+    }
+
+    &--vase {
+      bottom: 16%;
+      right: 46.8%;
+
+      @include vp-1649 {
+        bottom: 30%;
+      }
+      
+      @include vp-1023 {
+        bottom: 27%;
+        right: 46%;
+      }
+
+      @include vp-767 {
+        bottom: 22%;
+        right: 46%;
+      }
+
+      @media (max-width: 710px) {
+        bottom: 21.5%;
+        right: 41%;
+      }
+    }
+
+    &--sofa {
+      bottom: 19.5%;
+      right: 27.5%;
+
+      @include vp-1649 {
+        bottom: 30%;
+        right: 20%;
+      }
+
+      @include vp-1023 {
+        bottom: 28%;
+        right: 21%;
+      }
+
+      @include vp-767 {
+        bottom: 21.5%;
+        right: 17%;
+      }
+    }
+
+    &--chair {
+      bottom: 13.5%;
+      left: 17.5%;
+
+      @media (max-width: 1850px) {
+        left: 7%;
+      }
+
+      @include vp-1649 {
+        bottom: 30%;
+      }
+
+      @include vp-1023 {
+        bottom: 26%;
+        left: 8%;
+      }
+
+      @include vp-767 {
+        bottom: 20%;
+        left: 10%;
+      }
+    }
+  }
+}

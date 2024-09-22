@@ -1,0 +1,85 @@
+.custom-radio-payment__label {
+  position: relative;
+  display: block;
+  padding: 15px 13px 11px;
+  border: 2px solid #E2E4E8;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.custom-radio-payment__label::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #259DD6;
+  border-radius: 50%;
+}
+
+.custom-radio-payment__label:hover {
+  border-color: #259DD6;
+}
+
+.custom-radio-payment__label:focus-visible {
+  border-color: #259DD6;
+  outline: none;
+}
+
+.custom-radio-payment__field:checked + .custom-radio-payment__label::before {
+  content: url('../../images/sprite/check-icon.svg');
+  position: absolute;
+  top: 18px;
+  right: 21px;
+  z-index: 1;
+}
+
+.custom-radio-payment__field:checked + .custom-radio-payment__label::after {
+  background-color: #259DD6;
+}
+
+.custom-radio-payment__field:checked + .custom-radio-payment__label {
+  border-color: #259DD6;
+}
+
+.custom-radio-payment__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 50px;
+}
+
+.custom-radio-payment__price {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.custom-radio-payment__cost {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.custom-radio-payment__cost--top {
+  margin-bottom: 10px;
+}
+
+.custom-radio-payment__descr {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 133%;
+}
+
+.custom-radio-payment__descr-price {
+  font-weight: 700;
+}
+
+.custom-radio-payment__placeholder {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 130%;
+}

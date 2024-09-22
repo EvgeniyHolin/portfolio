@@ -1,0 +1,28 @@
+.btn {
+  padding: 12px;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.04em;
+  color: #AD8361;
+  border: 1px solid #AD8361;
+  border-radius: 60px;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #AD8361;
+}
+
+.btn:focus-visible {
+  color: #ffffff;
+  background-color: #AD8361;
+  outline: none;  
+}
+
+.btn:disabled {
+  color: rgba(173, 131, 97, 0.5);
+  background-color: rgba(243, 243, 243, 0.5);
+  border-color: rgba(173, 131, 97, 0.5);
+  user-select: none;
+  pointer-events: none;
+}

@@ -1,0 +1,159 @@
+.bubble {
+  position: absolute;
+  width: 334px;
+  $root: &;
+
+  &:hover #{$root}__wrapper {
+    transform: rotateY(360deg) scale(1.3);
+  }
+
+  &__wrapper {
+    transform: rotateX(0deg) scale(1);
+    transition: transform 1s ease;
+  }
+
+  &--smile-right,
+  &--smile-left {
+    #{$root}__wrapper {
+      transform: translateX(0);
+    }
+
+    &:hover #{$root}__wrapper {
+      transform: translateY(-30px);
+    }
+
+    &:hover #{$root}__img {
+      animation: moveSmile 1s ease 0.4s forwards;
+    }
+  }
+
+  &--blue {
+    color: $color-catalina-blue;
+    left: 598px;
+    top: 95px;
+  }
+
+  &--purple {
+    color: $color-palatinate-purple;
+    right: 24px;
+    top: 230px;
+    width: 297px;
+
+    #{$root}__text {
+      background-color: $color-palatinate-purple;
+    }
+  }
+
+  &--green {
+    bottom: 264px;
+    color: $color-spectra;
+    right: 0;
+    width: 283px;
+
+    #{$root}__text {
+      background-color: $color-spectra;
+    }
+  }
+
+  &--red {
+    bottom: 62px;
+    color: $color-pompadour;
+    right: 212px;
+    width: 363px;
+
+    #{$root}__text {
+      background-color: $color-pompadour;
+    }
+  }
+
+  &--violet {
+    bottom: 87px;
+    color: $color-scarlet-gum;
+    left: 141px;
+    width: 423px;
+
+    #{$root}__text {
+      background-color: $color-scarlet-gum;
+    }
+  }
+
+  &--brown {
+    bottom: 312px;
+    color: $color--rish-coffee;
+    left: 0;
+    width: 303px;
+
+    #{$root}__text {
+      background-color: $color--rish-coffee;
+    }
+  }
+
+  &--woodland {
+    color: $color-woodland;
+    left: 63px;
+    top: 157px;
+    width: 363px;
+
+    #{$root}__text {
+      background-color: $color-woodland;
+    }
+  }
+
+  &__text {
+    background-color: $color-catalina-blue;
+    border-radius: 40px;
+    color: $color-white-70;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    padding: 32px 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__tail {
+    bottom: 0;
+    left: -17px;
+    pointer-events: none;
+    position: absolute;
+
+    &--right {
+      bottom: 0;
+      left: auto;
+      pointer-events: none;
+      position: absolute;
+      right: -17px;
+    }
+  }
+
+  &__img {
+    left: -100px;
+    position: absolute;
+    top: -55px;
+    z-index: 0;
+    transform: scale(1);
+
+    &--right {
+      left: auto;
+      position: absolute;
+      right: -114px;
+      top: -45px;
+      z-index: 0;
+    }
+  }
+}
+
+@keyframes moveSmile {
+  0% {
+    transform: rotateZ(0deg) scale(1);
+  }
+  33% {
+    transform: rotateZ(-30deg) scale(1.2);
+  }
+  66% {
+    transform: rotateZ(30deg) scale(1.2);
+  }
+  100% {
+    transform: rotateZ(0deg) scale(1);
+  }
+}

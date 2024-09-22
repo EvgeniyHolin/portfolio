@@ -1,0 +1,80 @@
+.catalog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.catalog-form__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.catalog-form__views {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+}
+
+.catalog-form__reset {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.catalog-form__reset:hover {
+  color: #AD8361;
+}
+
+.catalog-form__reset:focus-visible {
+  color: #AD8361;
+  outline: none;
+}
+
+.catalog-form__reset-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.catalog-form__reset-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.catalog-form__fields {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-form__heading {
+  margin-bottom: 14px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 167%;
+  letter-spacing: -0.04em;
+}
+
+.catalog-form__wrapper-radio {
+  display: flex;
+}
+
+.catalog-form__wrapper-radio--transfer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.catalog-form__wrapper-checkbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 0;
+}

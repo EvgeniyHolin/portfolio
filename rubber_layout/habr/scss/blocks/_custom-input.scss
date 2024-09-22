@@ -1,0 +1,56 @@
+.custom-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  $root: &;
+
+  &--error {
+    .error {
+      display: block;
+    }
+
+    #{$root}__input {
+      border-color: $color-error;
+
+      &:focus-visible,
+      &:hover {
+        border-color: $color-error;
+      }
+    }
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-finch;
+  }
+
+  &__input {
+    padding: 18px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-bokara-grey;
+    background-color: transparent;
+    border: 1px solid rgba($color-bokara-grey, 0.1);
+
+    @include vp-590 {
+      padding: 16px 20px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &::placeholder {
+      color: rgba($color-bokara-grey, 0.3);
+      opacity: 1;
+    }
+
+    &:focus-visible,
+    &:hover {
+      outline: none;
+      border-color: $color-bokara-grey;
+    }
+  }
+}

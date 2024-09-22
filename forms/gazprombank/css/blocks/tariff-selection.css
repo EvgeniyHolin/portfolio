@@ -1,0 +1,26 @@
+.tariff-selection {
+  padding: 42px 0 50px;
+}
+
+.tariff-selection__title {
+  margin: 0 0 60px 0;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.tariff-selection__hashtag {
+  color: #259DD6;
+}
+
+.tariff-selection__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

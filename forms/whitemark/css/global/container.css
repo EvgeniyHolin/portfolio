@@ -1,0 +1,7 @@
+.container {
+  width: 100%;
+  /* max-width: 1360px; */
+  max-width: calc(1440px - 60px * 2 + 20px * 2);
+  margin: 0 auto;
+  padding: 0 20px;
+}

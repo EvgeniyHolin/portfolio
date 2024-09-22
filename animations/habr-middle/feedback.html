@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Обратная связь - БЕСIT</title>
+  </head>
+  <body>
+    <main>
+      <section class="feedback">
+        <div class="container container--feedback">
+          <div class="feedback__inner">
+            <div class="feedback__content">
+              <h1 class="feedback__title"><span class="feedback__title-accent">Бес</span>it</h1>
+              <p class="feedback__description">Поделись болью, вопросом или расскажи миру о&nbsp;том, кто из&nbsp;коллег съел твой йогурт</p>
+            </div>
+            <form class="form-message" action="#" method="POST">
+              <div class="custom-feedback-textarea">
+                <textarea class="custom-feedback-textarea__field" aria-label="Сообщение" name="user-message" placeholder="Твоё сообщение..." required></textarea>
+              </div>
+              <button class="form-message__btn" type="submit" aria-label="Отправить сообщение">
+                <svg class="form-message__btn-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+            <ul class="feedback__bubbles">
+              <li class="bubble bubble--blue bubble--smile-left">
+                <div class="bubble__wrapper">
+                  <p class="bubble__text">Я всю жизнь хотел в IT и у меня получилось. Но теперь я хочу с кем-то об этом поговорить...</p>
+                  <img class="bubble__img" src="images/smile-1.png" alt="Фиолетовый эмодзи-дьявол">
+                </div>
+              </li>
+              <li class="bubble bubble--purple">
+                <div class="bubble__wrapper">
+                  <p class="bubble__text">Для тестировщиков есть отдельный котёл в аду, я&nbsp;проверяла</p>
+                  <svg class="bubble__tail" width="32" height="40" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tail-left"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="bubble bubble--green">
+                <div class="bubble__wrapper">
+                  <p class="bubble__text">Что делать, если я хочу быть котиком, но надо идти и писать код?</p>
+                  <svg class="bubble__tail" width="32" height="40" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tail-left"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="bubble bubble--red">
+                <div class="bubble__wrapper">
+                  <p class="bubble__text">Как же бесит Safari и его бесконечные баги с анимациями</p>
+                  <svg class="bubble__tail" width="32" height="40" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tail-left"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="bubble bubble--violet bubble--smile-right">
+                <div class="bubble__wrapper">
+                  <p class="bubble__text">У меня так много рабочих созвонов, что может показаться, что я зарабатываю не разработкой, а вебкамом</p>
+                  <img class="bubble__img bubble__img--right" src="images/smile-2.png" alt="Желтый эмодзи-злой">
+                </div>
+              </li>
+              <li class="bubble bubble--brown">
+                <div class="bubble__wrapper">
+                  <p class="bubble__text">4 часа искать ошибку в коде, а в итоге найти неправильно написанное слово "heigth"</p>
+                  <svg class="bubble__tail bubble__tail--right" width="32" height="40" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tail-right"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="bubble bubble--woodland">
+                <div class="bubble__wrapper">
+                  <p class="bubble__text">Бесит когда дизайнеры в 10 раз правят отступы, после того как я&nbsp;закончил править ПП</p>
+                  <svg class="bubble__tail bubble__tail--right" width="32" height="40" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tail-right"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="feedback-footer">
+          <div class="container container--feedback">
+            <div class="feedback-footer__inner">
+              <div class="feedback-footer__inner-info">
+                <a class="feedback-footer__logo-link" href="#" aria-label="Переход на главную страницу">
+                  <svg class="feedback-footer__logo" width="120" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#logo"></use>
+                  </svg>
+                </a>
+                <div class="feedback-footer__copyright">
+                  <svg class="feedback-footer__copyright-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-copy"></use>
+                  </svg>
+                  <span class="feedback-footer__copyright-text">Все права защищены и&nbsp;принадлежат народу</span>
+                </div>
+              </div>
+              <div class="feedback-footer__subscribe">
+                <p class="feedback-footer__subscribe-text">Читай подборку по&nbsp;дороге на&nbsp;работу или за&nbsp;чашкой кофе</p>
+                <form class="subscribe-form" action="#" method="POST">
+                  <div class="custom-feedback-input">
+                    <input class="custom-feedback-input__field" aria-label="Электронная почта" type="email" name="email" placeholder="Электронная почта" required>
+                    <svg class="custom-feedback-input__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-mail"></use>
+                    </svg>
+                  </div>
+                  <button class="feedback-footer__btn" type="submit">Подписаться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 20px;
+  background-color: #b3adad;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__label {
+  font-size: 14px;
+  line-height: 18px;
+  color: #c0bcbc;
+}
+
+.card__value {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}

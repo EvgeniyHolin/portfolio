@@ -1,0 +1,40 @@
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.thead {
+  background-color: rgb(35, 34, 34);
+}
+
+.th-row {
+  color: #fff;
+  text-align: left;
+}
+
+.th-cell {
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.th-cell:last-child {
+  pointer-events: none;
+}
+
+.th-cell:not(:last-child):hover {
+  opacity: 0.5;
+}
+
+.row {
+  background-color: #fff;
+}
+
+.cell {
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  border: 1px solid #7c7777;
+}
