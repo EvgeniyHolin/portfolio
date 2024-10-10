@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ваш дом</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,9 +16,190 @@
             <use xlink:href="images/sprite.svg#main-logo"></use>
           </svg>
         </a>
-        <nav class="header__nav"></nav>
+        <nav class="header__nav main-nav">
+          <div class="main-nav__select">
+            <svg class="main-nav__map-pin" width="14" height="14" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#map-pin"></use>
+            </svg>
+            <select class="main-nav__select-list" name="city" id="city">
+              <option class="main-nav__select-item" value="москва">москва</option>
+              <option class="main-nav__select-item" value="казань">казань</option>
+              <option class="main-nav__select-item" value="волгоград">волгоград</option>
+            </select>
+            <svg class="main-nav__select-arrow" width="18" height="18" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#select-arrow"></use>
+            </svg>
+          </div>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">О&nbsp;нас</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Услуги</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Наши работы</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">вакансии</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">новости</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
+  <main>
+    <section class="banner">
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="banner-slide">
+                  <picture class="banner-slide__piscture">
+                    <img class="banner-slide__image" src="images/slider/interior-desktop.jpg" srcset="images/slider/interior-desktop@2x.jpg 2x" 
+                      width="1240" height="270" alt="Интерьер жилого помещения">
+                  </picture>
+                  <ul class="banner-slide__list">
+                    <li class="banner-slide__item">
+                      <span class="banner-slide__label">акция</span>
+                    </li>
+                    <li class="banner-slide__item">
+                      <span class="banner-slide__label">10&nbsp;октября&nbsp;&hyphen; 28&nbsp;октября</span>
+                      
+                    </li>
+                  </ul>
+                  <div class="banner-slide__info">
+                    <div class="banner-slide__order">
+                      <span class="banner-slide__order-title">Утепление лоджии</span>
+                      <a class="banner-slide__order-link btn" href="#">Заказать</a>
+                    </div>
+                    <p class="banner-slide__text">
+                      Скидка&nbsp;15% для новых клиентов при заказе услуги Утепление лоджии
+                    </p>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-slide">
+                <picture class="banner-slide__piscture">
+                  <img class="banner-slide__image" src="images/slider/interior-desktop.jpg" srcset="images/slider/interior-desktop@2x.jpg 2x" 
+                    width="1240" height="270" alt="Интерьер жилого помещения">
+                </picture>
+                <ul class="banner-slide__list">
+                  <li class="banner-slide__item">
+                    <span class="banner-slide__label">акция</span>
+                  </li>
+                  <li class="banner-slide__item">
+                    <span class="banner-slide__label">12&nbsp;декабря&nbsp;&hyphen; 1&nbsp;января</span>
+                    
+                  </li>
+                </ul>
+                <div class="banner-slide__info">
+                  <div class="banner-slide__order">
+                    <span class="banner-slide__order-title">Замена окон</span>
+                    <a class="banner-slide__order-link btn" href="#">Заказать</a>
+                  </div>
+                  <p class="banner-slide__text">
+                    Скидка&nbsp;15% для новых клиентов при заказе услуги Замена окон
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-slide">
+                <picture class="banner-slide__piscture">
+                  <img class="banner-slide__image" src="images/slider/interior-desktop.jpg" srcset="images/slider/interior-desktop@2x.jpg 2x" 
+                    width="1240" height="270" alt="Интерьер жилого помещения">
+                </picture>
+                <ul class="banner-slide__list">
+                  <li class="banner-slide__item">
+                    <span class="banner-slide__label">акция</span>
+                  </li>
+                  <li class="banner-slide__item">
+                    <span class="banner-slide__label">12&nbsp;декабря&nbsp;&hyphen; 1&nbsp;января</span>
+                    
+                  </li>
+                </ul>
+                <div class="banner-slide__info">
+                  <div class="banner-slide__order">
+                    <span class="banner-slide__order-title">Замена дверей</span>
+                    <a class="banner-slide__order-link btn" href="#">Заказать</a>
+                  </div>
+                  <p class="banner-slide__text">
+                    Скидка&nbsp;15% для новых клиентов при заказе услуги Замена окон
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev">
+            <svg class="swiper-button-arrow" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#select-arrow"></use>
+            </svg>
+          </div>
+
+          <div class="swiper-button-next">
+            <svg class="swiper-button-arrow swiper-button-arrow--next" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#select-arrow"></use>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="directions">
+      <div class="container">
+        <h1 class="directions__title">
+          Услуги и&nbsp;товары для вашего дома
+        </h1>
+        <ul class="directions__list">
+          <li class="directions__item">
+            <h2 class="directions__subtitle">ремонт</h2>
+            <p class="directions__subtext">Комплекс мероприятий по&nbsp;восстановлению работоспособного какого-либо объекта</p>
+          </li>
+          <li class="directions__item">
+            <h2 class="directions__subtitle">Клининг</h2>
+            <p class="directions__subtext">Комплекс мероприятий по&nbsp;восстановлению работоспособного какого-либо объекта</p>
+          </li>
+          <li class="directions__item">
+            <h2 class="directions__subtitle">пвх-изделия</h2>
+            <p class="directions__subtext">Комплекс мероприятий по&nbsp;восстановлению работоспособного какого-либо объекта</p>
+          </li>
+        </ul>
+        <div class="directions__bottom">
+          <picture class="directions__picture">
+            <img class="directions_image" src="images/directions/interior-desktop.jpg" srcset="images/directions/interior-desktop@2x.jpg 2x"
+              width="940" height="525" alt="Изображение инерьера">
+          </picture>
+          <div class="directions__info">
+            <h2 class="directions__subtitle directions__subtitle--info">услуги для дома</h2>
+            <p class="directions__subtext directions__subtext--info">
+              Однозначно, интерактивные прототипы, инициированные исключительно синтетически, 
+              описаны максимально подробно. Значимость этих проблем настолько очевидна, 
+              что перспективное планирование является качественно новой ступенью первоочередных требований.
+            </p>
+            <a class="directions__link btn btn--l" href="#">Все услуги</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script type="module" src="js/index.js"></script>
 </body>
 </html>

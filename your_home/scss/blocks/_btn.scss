@@ -1,0 +1,19 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 318px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  background-color: $color-cinnabar;
+  border: 1px solid $color-cinnabar;
+  border-radius: 100px;
+  pointer-events: all;
+
+  &--l {
+    padding: 11px 10px;
+    width: 336px;
+  }
+}

@@ -1,0 +1,40 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+
+  &__select {
+    position: relative;
+    display: flex;
+  }
+
+  &__map-pin {
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  &__select-arrow {
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    transition: transform $transition-300;
+  }
+  
+  &__list {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

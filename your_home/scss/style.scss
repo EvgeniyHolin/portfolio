@@ -1,9 +1,19 @@
 /* Global */
 /* ------------------------------------ */
 @import "global/normalize";
+@import "global/variables";
 @import "global/container";
 @import "global/reboot";
+@import "global/fonts";
 @import "global/visually-hidden";
 
 /* Blocks */
 /* ------------------------------------ */
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/choices";
+@import "blocks/swiper";
+@import "blocks/banner";
+@import "blocks/banner-slide";
+@import "blocks/directions";

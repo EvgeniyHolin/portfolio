@@ -7,6 +7,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import '/node_modules/swiper/swiper-bundle.min.css';
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -331,6 +332,9 @@ body {
   padding: 0;
   font-size: 14px;
   line-height: 19.6px;
+  font-family: "Inter", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #152C39;
 }
 
 main {
@@ -347,12 +351,27 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 textarea {
   resize: none;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/InterRegular.woff2") format("woff2"), url("../../fonts/InterRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Play";
+  src: url("../../fonts/PlayRegular.woff2") format("woff2"), url("../../fonts/PlayRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -368,4 +387,285 @@ textarea {
 }
 
 /* Blocks */
-/* ------------------------------------ *//*# sourceMappingURL=style.css.map */
+/* ------------------------------------ */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 318px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  background-color: #E53624;
+  border: 1px solid #E53624;
+  border-radius: 100px;
+  pointer-events: all;
+}
+.btn--l {
+  padding: 11px 10px;
+  width: 336px;
+}
+
+.header {
+  margin: 0 0 41px;
+}
+.header__wrapper {
+  display: flex;
+  gap: 116px;
+  padding: 33px 0 28px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+.main-nav__select {
+  position: relative;
+  display: flex;
+}
+.main-nav__map-pin {
+  position: absolute;
+  width: 14px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 10;
+}
+.main-nav__select-arrow {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  transition: transform ease-in 0.3s;
+}
+.main-nav__list {
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.main-nav__link {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.choices {
+  position: relative;
+  margin: 0;
+  padding: 0 22px 0 22px;
+  min-width: 110px;
+}
+.choices__inner {
+  display: flex;
+  margin: 0 0 -21px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+.choices__list {
+  padding: 0;
+}
+.choices__item {
+  display: inline-block;
+  letter-spacing: normal;
+  color: #ffffff;
+  background-color: transparent;
+}
+.choices__item--choice {
+  text-transform: uppercase;
+}
+.choices[data-type*=select-one]::after {
+  display: none;
+}
+
+.is-open .choices__list--dropdown {
+  position: absolute;
+  left: 0;
+  top: 130%;
+  width: 100%;
+  background-color: #152C39;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 10;
+}
+.is-open .choices__list--dropdown .choices__item--selectable {
+  padding: 12px;
+  width: 100%;
+}
+.is-open .choices__list--dropdown .choices__item--selectable.is-highlighted {
+  color: #152C39;
+}
+.is-open + .main-nav__select-arrow {
+  transform: rotate(180deg);
+}
+
+.swiper {
+  width: 100%;
+}
+.swiper-button-prev, .swiper-button-next {
+  top: 50%;
+  left: 1%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: "";
+}
+.swiper-button-prev .swiper-button-arrow, .swiper-button-next .swiper-button-arrow {
+  width: 24px;
+  height: 24px;
+}
+.swiper-button-next {
+  left: unset;
+  right: 1%;
+}
+.swiper-button-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: #ffffff;
+  transform: rotate(90deg) translateX(-50%) translateY(-50%);
+  z-index: 10;
+}
+.swiper-button-arrow--next {
+  transform: rotate(270deg) translateX(50%) translateY(50%);
+}
+
+.banner {
+  margin: 0 0 103px;
+}
+
+.banner-slide {
+  position: relative;
+  padding: 40px 105px 51px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  pointer-events: none;
+}
+.banner-slide__piscture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+.banner-slide__image {
+  width: 100%;
+  height: 100%;
+}
+.banner-slide__list {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.banner-slide__label {
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  border: 1px solid #ECECEC;
+  border-radius: 100px;
+}
+.banner-slide__info {
+  display: flex;
+  gap: 42px;
+}
+.banner-slide__order {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 47%;
+}
+.banner-slide__order-title {
+  font-family: "Play", "Georgia", serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.banner-slide__text {
+  margin: 0;
+  width: 23%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+}
+
+.directions {
+  margin: 0 0 120px;
+}
+.directions__title {
+  margin: 0 auto 60px;
+  max-width: 675px;
+  font-family: "Play", "Georgia", serif;
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.directions__list {
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  list-style-type: none;
+}
+.directions__item {
+  padding: 24px;
+}
+.directions__subtitle {
+  margin: 0 0 12px;
+  font-family: "Play", "Georgia", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.directions__subtitle--info {
+  margin: 0 0 17px;
+}
+.directions__subtext {
+  margin: 0;
+  font-weight: 400;
+}
+.directions__subtext--info {
+  margin: 0 0 24px;
+  max-width: 315px;
+  line-height: 20px;
+}
+.directions__bottom {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.directions__picture {
+  flex-shrink: 0;
+  width: 940px;
+  height: 525px;
+}
+.directions__info {
+  display: flex;
+  flex-direction: column;
+  padding: 130px 56px;
+  width: 100%;
+  background-color: #476178;
+}/*# sourceMappingURL=style.css.map */
