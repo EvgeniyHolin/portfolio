@@ -1,0 +1,24 @@
+.services {
+  padding: 120px 0 120px;
+  background-color: $color-default-white;
+
+  &__title {
+    margin: 0 0 48px;
+    font-family: $ff-secondary;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 58px;
+    color: $color-swamp;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}

@@ -1,6 +1,4 @@
 .directions {
-  margin: 0 0 120px;
-
   &__title {
     margin: 0 auto 60px;
     max-width: 675px;
@@ -62,6 +60,11 @@
     flex-shrink: 0;
     width: 940px;
     height: 525px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
   }
 
   &__info {

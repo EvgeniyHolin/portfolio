@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ваш дом</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -61,6 +61,7 @@
   <main>
     <section class="banner">
       <div class="container">
+        <h2 class="visually-hidden">Баннер сайта Ваш дом</h2>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -160,6 +161,7 @@
         </div>
       </div>
     </section>
+
     <section class="directions">
       <div class="container">
         <h1 class="directions__title">
@@ -167,25 +169,25 @@
         </h1>
         <ul class="directions__list">
           <li class="directions__item">
-            <h2 class="directions__subtitle">ремонт</h2>
+            <h3 class="directions__subtitle">ремонт</h3>
             <p class="directions__subtext">Комплекс мероприятий по&nbsp;восстановлению работоспособного какого-либо объекта</p>
           </li>
           <li class="directions__item">
-            <h2 class="directions__subtitle">Клининг</h2>
+            <h3 class="directions__subtitle">Клининг</h3>
             <p class="directions__subtext">Комплекс мероприятий по&nbsp;восстановлению работоспособного какого-либо объекта</p>
           </li>
           <li class="directions__item">
-            <h2 class="directions__subtitle">пвх-изделия</h2>
+            <h3 class="directions__subtitle">пвх-изделия</h3>
             <p class="directions__subtext">Комплекс мероприятий по&nbsp;восстановлению работоспособного какого-либо объекта</p>
           </li>
         </ul>
         <div class="directions__bottom">
           <picture class="directions__picture">
-            <img class="directions_image" src="images/directions/interior-desktop.jpg" srcset="images/directions/interior-desktop@2x.jpg 2x"
+            <img class="directions__image" src="images/directions/interior-desktop.jpg" srcset="images/directions/interior-desktop@2x.jpg 2x"
               width="940" height="525" alt="Изображение инерьера">
           </picture>
           <div class="directions__info">
-            <h2 class="directions__subtitle directions__subtitle--info">услуги для дома</h2>
+            <h3 class="directions__subtitle directions__subtitle--info">услуги для дома</h3>
             <p class="directions__subtext directions__subtext--info">
               Однозначно, интерактивные прототипы, инициированные исключительно синтетически, 
               описаны максимально подробно. Значимость этих проблем настолько очевидна, 
@@ -194,6 +196,110 @@
             <a class="directions__link btn btn--l" href="#">Все услуги</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">Услуги</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <a class="services__link" href="#">
+              <div class="services-card">
+                <picture class="services-card__picture">
+                  <img class="services-card__image" src="images/services/outsourcing-desk.jpg" 
+                    srcset="images/services/outsourcing-desk@2x.jpg 2x" 
+                      width="302" height="235" alt="Фоновое изображение карточки услуг">
+                </picture>
+                <h3 class="services-card__title">Аутсорсинг</h3>
+              </div>
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">
+              <div class="services-card">
+                <picture class="services-card__picture">
+                  <img class="services-card__image" src="images/services/cleaning-desk.jpg" 
+                    srcset="images/services/cleaning-desk@2x.jpg 2x" 
+                      width="302" height="235" alt="Фоновое изображение карточки услуг">
+                </picture>
+                <h3 class="services-card__title">Клининг</h3>
+              </div>
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">
+              <div class="services-card">
+                <picture class="services-card__picture">
+                  <img class="services-card__image" src="images/services/current-repairs-desk.jpg" 
+                    srcset="images/services/current-repairs-desk@2x.jpg 2x" 
+                      width="302" height="235" alt="Фоновое изображение карточки услуг">
+                </picture>
+                <h3 class="services-card__title">Текущий ремонт</h3>
+              </div>
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">
+              <div class="services-card">
+                <picture class="services-card__picture">
+                  <img class="services-card__image" src="images/services/major-renovation-desk.jpg" 
+                    srcset="images/services/major-renovation-desk@2x.jpg 2x" 
+                      width="302" height="235" alt="Фоновое изображение карточки услуг">
+                </picture>
+                <h3 class="services-card__title">Капитальный ремонт</h3>
+              </div>
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">
+              <div class="services-card">
+                <picture class="services-card__picture">
+                  <img class="services-card__image" src="images/services/pvc-products-desk.jpg" 
+                    srcset="images/services/pvc-products-desk@2x.jpg 2x" 
+                      width="302" height="235" alt="Фоновое изображение карточки услуг">
+                </picture>
+                <h3 class="services-card__title">ПВХ-изделия</h3>
+              </div>
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">
+              <div class="services-card">
+                <picture class="services-card__picture">
+                  <img class="services-card__image" src="images/services/suspended-ceilings-desk.jpg" 
+                    srcset="images/services/suspended-ceilings-desk@2x.jpg 2x" 
+                      width="302" height="235" alt="Фоновое изображение карточки услуг">
+                </picture>
+                <h3 class="services-card__title">Натяжные потолки</h3>
+              </div>
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">
+              <div class="services-card">
+                <picture class="services-card__picture">
+                  <img class="services-card__image" src="images/services/individual-tailoring-desk.jpg" 
+                    srcset="images/services/individual-tailoring-desk@2x.jpg 2x" 
+                      width="302" height="235" alt="Фоновое изображение карточки услуг">
+                </picture>
+                <h3 class="services-card__title">Индивидуальный пошив</h3>
+              </div>
+            </a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">
+              <div class="services-card">
+                <picture class="services-card__picture">
+                  <img class="services-card__image" src="images/services/forklift-services-desk.jpg" 
+                    srcset="images/services/forklift-services-desk@2x.jpg 2x" 
+                      width="302" height="235" alt="Фоновое изображение карточки услуг">
+                </picture>
+                <h3 class="services-card__title">Услуги погрузчика</h3>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
