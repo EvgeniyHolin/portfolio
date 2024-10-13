@@ -51,7 +51,8 @@
   &__bottom {
     display: flex;
     position: relative;
-    width: 100vw;
+    // width: calc(100vw - 17px); // ! раскоментировать, когда будет делаться адаптив
+    width: 100vw; // ! убрать, когда будет делаться адаптив
     left: 50%;
     transform: translateX(-50%);
   }
