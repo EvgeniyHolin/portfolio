@@ -1,0 +1,35 @@
+.news-card {
+  &__picture {
+    margin: 0 0 16px;
+    display: block;
+    width: 407px;
+    height: 180px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__info {
+    margin: 0 0 8px;
+    display: flex;
+    gap: 12px;
+  }
+
+  &__date,
+  &__tag {
+    color: $color-oslo-grey;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $ff-secondary;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $color-swamp;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}

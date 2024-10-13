@@ -331,6 +331,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  font-weight: 400;
   line-height: 19.6px;
   font-family: "Inter", "Arial", sans-serif;
   color: #ffffff;
@@ -405,6 +406,9 @@ textarea {
 .btn--l {
   padding: 11px 10px;
   width: 336px;
+}
+.btn--xl {
+  width: 373px;
 }
 
 .header {
@@ -803,7 +807,7 @@ textarea {
   font-family: "Play", "Georgia", serif;
   font-size: 32px;
   font-weight: 700;
-  line-height: 37.93px;
+  line-height: 32.93px;
   letter-spacing: 0.035em;
   text-transform: uppercase;
   pointer-events: none;
@@ -822,4 +826,61 @@ textarea {
   line-height: 25.2px;
   border: 1px solid #ECECEC;
   border-radius: 100px;
+}
+
+.news {
+  padding: 120px 0 124px;
+  background-color: #ffffff;
+}
+.news__title {
+  margin: 0 0 48px;
+  font-family: "Play", "Georgia", serif;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #191A1A;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.news__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 0 48px;
+  padding: 0;
+  list-style-type: none;
+}
+.news__button {
+  margin: 0 0 0 auto;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.news-card__picture {
+  margin: 0 0 16px;
+  display: block;
+  width: 407px;
+  height: 180px;
+}
+.news-card__image {
+  width: 100%;
+  height: 100%;
+}
+.news-card__info {
+  margin: 0 0 8px;
+  display: flex;
+  gap: 12px;
+}
+.news-card__date, .news-card__tag {
+  color: #8B8E8E;
+}
+.news-card__title {
+  margin: 0;
+  font-family: "Play", "Georgia", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #191A1A;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }/*# sourceMappingURL=style.css.map */
